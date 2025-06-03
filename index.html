@@ -1,0 +1,137 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glitched Charm - Food Blog</title>
+  <style>
+   /* ...existing code... */
+.hero {
+  position: relative;
+  padding: 2rem;
+  text-align: center;
+}
+.hero-img-wrapper {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 8px 32px rgba(255,102,0,0.10);
+  border-radius: 50%;
+  background: #fff;
+  padding: 70px;
+  transition: box-shadow 0.3s;
+}
+.hero-img-wrapper:hover {
+  box-shadow: 0 16px 48px rgba(255,102,0,0.18);
+}
+.hero-title-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #cc400d;
+  background: rgba(51, 23, 4, 0.85);
+  padding: 0.7em 1.5em;
+  border-radius: 1em;
+  font-size: 1.3rem;
+  font-weight: bold;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  pointer-events: none;
+  white-space: nowrap;
+}
+.hero img {
+  max-width: 120px;
+  width: 25%;
+  border-radius: 100px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  margin: 1.5rem auto 0 auto;
+  display: block;
+}
+/* ...existing code... */
+    html {
+  scroll-padding-top: 80px; /* Adjust to your header height if needed */
+}
+
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #fffaf2; color: #333; scroll-behavior: smooth; }
+    header { background: #ff6600; color: #fff; padding: 1.5rem; text-align: center;}
+    nav a { color: white; margin: 0 1rem; text-decoration: none; }
+    .hero, .section { padding: 2rem; text-align: center; }
+    .hero img { max-width: 90%; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; padding: 1rem; scroll-behavior: smooth;}
+    .gallery img { width:100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .blog-post { background: #fff; padding: ; margin: 1rem 0; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1); text-align: left; scroll-behavior: smooth;}
+    .blog-post img { width: 150px; border-radius: 8px; margin-top: 0.5rem; height: auto;}
+    footer { background: #222; color: #fff; text-align: center; padding: 1rem; margin-top: 3rem; }
+    .social a { color: #ff6600; margin: 0 0.5rem; text-decoration: none; }
+    .contact { text-align: center; padding: 1rem; scroll-behavior: smooth;}
+    .blog-post {
+  width: 50px /* adjust as per your layout */
+  padding: 80px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.alt {
+  width: 100%; /* fills most of the card but stays inside */
+  height: auto;
+  display: block;
+  margin:auto;
+  border-radius: 50px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tech Foody</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <section class="hero">
+  <div class="hero-img-wrapper">
+    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Delicious food" />
+    <div class="hero-title-overlay">Welcome to Glitched Charm</div>
+  </div>
+  <p>Your go-to blog for flavor-packed food finds!</p>
+</section> <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm the creator of Glitched Charm. I love food and I'm really good at promoting the best eats in town. Follow along as I explore flavors, textures, and food vibes that you’ll fall in love with.</p>
+  </section>  <section class="section" id="gallery">
+    <h2>Food Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Burger" />
+      <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90" alt="Dessert" />
+      <img src="https://ik.imagekit.io/pcpeetp69/img4.jpg?updatedAt=1748955227211" alt="Pasta" />
+    </div>
+  </section>  <section class="section" id="blog">
+    <h2>Latest From the Blog</h2>
+    <div class="blog-post">
+      <h3>Indian Street Food Vibes</h3>
+      <p>Explore the bustling flavors of India’s streets — kachoris, chaats, puris, and so much more. Dive into a sensory overload of crisp, spice, and zing.</p>
+      <img src="https://ik.imagekit.io/pcpeetp69/img3.jpg?updatedAt=1748954866459" alt="Street food" />
+    </div>
+    <div class="blog-post">
+      <h3>Desserts You Deserve</h3>
+      <p>From chocolate lava to cheesecake slices, here’s your sweet fix. We highlight desserts that are just too pretty (and delicious) to miss!</p>
+      <img src="https://ik.imagekit.io/pcpeetp69/img1.jpg?updatedAt=1748954726435" alt="Desserts" />
+    </div>
+    <div class="blog-post">
+      <h3>Trend Café Bites</h3>
+      <p>Breakfast platters, buttery bhature, and loaded plates that scream “weekend brunch”. Here’s what’s trending in cafes now.</p>
+      <img src="https://ik.imagekit.io/pcpeetp69/img2.jpg?updatedAt=1748954772866" alt="Café food" />
+    </div>
+  </section>  <section class="section" id="contact">
+    <h2>Contact Me</h2>
+    <p>Want to collab or just talk food? Hit me up!</p>
+    <p><strong>Phone:</strong> 9604497097</p>
+    <p><strong>Email:</strong> sanskrutilambe@gmail.com</p>
+    <div class="social">
+      <a href="https://instagram.com/glitched.charm" target="_blank">Gliched.charm</a>
+    </div>
+  </section>  <footer>
+    <p>&copy; 2025 Glitched Charm. All rights reserved.</p>
+  </footer>
+</body>
+</html>
